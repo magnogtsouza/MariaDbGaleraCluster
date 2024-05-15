@@ -3,9 +3,11 @@ Este artigo e um passo a passo para a configuração do MariaDB  com Galera Gale
 
 aqui foi utilizado como sistema operacional o Linux Debian 12.
 Vamos considerar o Seguinte que temos 3 servidores aqui chamaremos eles de nos.
+
 - ServerA 192.168.1.10
 - ServerB 192.168.1.20
 - ServerC 192.168.1.30
+
 Sendo ServerA o no principal do cluster.
 Os passos a seguir devem ser executados em todos os servidores.
 Considerando que você já está logado como root em todos os servidores, vamos definir a mesma senha e todos os servidores.
