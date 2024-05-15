@@ -1,5 +1,5 @@
-# MariaGaleraCluster
-Este artigo e um passo a passo para a configuração do MariaDB  com Galera
+# MariaDBGaleraCluster
+Este artigo e um passo a passo para a configuração do MariaDB  com Galera Galera Cluster
 
 aqui foi utilizado como sistema operacional o Linux Debian 12.
 Vamos considerar o Seguinte que temos 3 servidores aqui chamaremos eles de nos.
@@ -48,7 +48,7 @@ wsrep_cluster_address="gcomm://192.168.1.10, 192.168.1.20, 192.168.1.30"
 # Galera Synchronization Configuration
 wsrep_sst_method=rsync
 ```
-Agora a configuração do galeria e do mariadb esta completa mas talvez ainda não funcione devido a configurações de firewall e infrestrutura:
+Agora a configuração do galera e do mariadb esta completa mas talvez ainda não funcione devido a configurações de firewall e infrestrutura:
 
 Para que o Galera Cluster funcione é necessário liberar algumas portas:
 3306: Esta é a porta padrão para conexões de cliente MySQL e Transferência de Estado de Snapshot usando mysqldump para backups.
