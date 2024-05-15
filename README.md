@@ -36,7 +36,7 @@ Vamos utilizar o nano para editar o arquivo.
 ```
 Navegue até o final do arquivo e adicione as seguintes linhas
 ```
-[mysqld]
+![#f03c15][mysqld]
 binlog_format=ROW
 default-storage-engine=innodb
 innodb_autoinc_lock_mode=2
@@ -48,7 +48,7 @@ wsrep_provider=/usr/lib/galera/libgalera_smm.so
 wsrep_cluster_name="test_cluster"
 wsrep_cluster_address="gcomm://192.168.1.10, 192.168.1.20, 192.168.1.30"
 # Galera Synchronization Configuration
-wsrep_sst_method=rsync
+wsrep_sst_method=rsync `#f03c15`
 ```
 Agora a configuração do galera e do mariadb esta completa mas talvez ainda não funcione devido a configurações de firewall e infrestrutura:
 
