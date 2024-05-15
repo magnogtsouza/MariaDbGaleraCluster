@@ -102,14 +102,14 @@ Mas isso ainda não é tudo, precisamos garantir que este usuário tenha permiss
 No exemplo a seguir vamos assegurar que o usuário tem privilégios máximos.
 Ainda no mariadb
 ```
-SQL:  GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
+SQL: GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
 ```
 Se em agum momento você precisar alterar a senha de algum perfil:
 Insira o comando no mariadb
 ```
-SET PASSWORD FOR 'root'@'%' = PASSWORD(‘a01b02c03’);
+SQL: SET PASSWORD FOR 'root'@'%' = PASSWORD(‘a01b02c03’);
 ```
 Caso as alterações de usuário não estejam sendo aplicadas tente o seguinte comand no mariadb
 ```
-FLUSH PRIVILEGES;
+SQL: FLUSH PRIVILEGES;
 ```
